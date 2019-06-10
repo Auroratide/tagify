@@ -100,9 +100,11 @@ module.exports = (Component, options = {}) => {
   Object
     .values(tags)
     .filter(tag => {
-      if(options.whitelist)
+      if(options.whitelist) {
         return options.whitelist.includes(tag);
-      else {
+      } else if(options.blacklist) {
+        return !options.blacklist.includes(tag);
+      } else {
         return true;
       }
     })
