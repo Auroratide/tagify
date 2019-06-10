@@ -96,8 +96,17 @@ const tags = {
   time: 'time'
 };
 
-module.exports = Component => {
-  Object.values(tags).forEach(tag => addTag(tag, Component));
+module.exports = (Component, options = {}) => {
+  Object
+    .values(tags)
+    .filter(tag => {
+      if(options.whitelist)
+        return options.whitelist.includes(tag);
+      else {
+        return true;
+      }
+    })
+    .forEach(tag => addTag(tag, Component));
   
   return Component;
 };
