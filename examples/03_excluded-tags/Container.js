@@ -7,5 +7,5 @@ const Container = ({ Tag, children, ...props }) =>
   </Tag>;
 
 export default tagify(Container, {
-  blacklist: [ tags.a, tags.button ]
+  exclude: [ tags.a, tags.button ]
 });

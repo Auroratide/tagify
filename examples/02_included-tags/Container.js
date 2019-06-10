@@ -7,5 +7,5 @@ const Container = ({ Tag, children, ...props }) =>
   </Tag>;
 
 export default tagify(Container, {
-  whitelist: [ tags.article, tags.section, tags.div ]
+  include: [ tags.article, tags.section, tags.div ]
 });

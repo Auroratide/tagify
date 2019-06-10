@@ -100,10 +100,10 @@ module.exports = (Component, options = {}) => {
   Object
     .values(tags)
     .filter(tag => {
-      if(options.whitelist) {
-        return options.whitelist.includes(tag);
-      } else if(options.blacklist) {
-        return !options.blacklist.includes(tag);
+      if(options.include) {
+        return options.include.includes(tag);
+      } else if(options.exclude) {
+        return !options.exclude.includes(tag);
       } else {
         return true;
       }
