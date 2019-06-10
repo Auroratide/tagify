@@ -110,6 +110,9 @@ module.exports = (Component, options = {}) => {
     })
     .forEach(tag => addTag(tag, Component));
   
+  if(options.default)
+    Component.defaultProps = Object.assign(Component.defaultProps || {}, { Tag: options.default });
+  
   return Component;
 };
 
