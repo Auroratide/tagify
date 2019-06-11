@@ -1,13 +1,23 @@
 {
   "name": "@auroratide/tagify",
   "version": "0.1.0",
-  "description": "",
+  "description": "Higher-order component for adding HTML5 tagnames to a component",
+  "keywords": [
+    "react",
+    "html5",
+    "tags",
+    "accessibility"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "jest examples",
-    "test:one": "jest"
+    "test:one": "jest",
+    "prepublishOnly": "npm run test"
   },
-  "author": "",
+  "author": {
+    "name": "Timothy Foster",
+    "url": "https://auroratide.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
@@ -17,5 +27,8 @@
     "jest": "^24.8.0",
     "react": "^16.9.0-alpha.0",
     "react-dom": "^16.9.0-alpha.0"
+  },
+  "peerDependencies": {
+    "react": "16.x"
   }
 }
