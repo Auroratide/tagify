@@ -21,6 +21,7 @@ const tags = {
   hgroup: 'hgroup',
   hr: 'hr',
   footer: 'footer',
+  main: 'main',
   nav: 'nav',
   p: 'p',
   section: 'section',
