@@ -18,6 +18,10 @@
     "name": "Timothy Foster",
     "url": "https://auroratide.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Auroratide/tagify"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
